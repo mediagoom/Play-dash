@@ -1,0 +1,22 @@
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" mediaPresentationDuration="PT634.600000S" minBufferTime="PT3S"><Period><AdaptationSet id="1" group="1" profiles="ccff" bitstreamSwitching="false" segmentAlignment="true" contentType="audio" mimeType="audio/mp4"  codecs="mp4a.40.2" startWithSAP="1" >
+<SegmentTemplate timescale="10000000" media="audio_$Bandwidth$_$Time$.m4a" initialization="audio_$Bandwidth$_i.m4a" >
+<SegmentTimeline>
+<S d="19969161" t="928798" />
+<S d="19969161" r="80" />
+<S d="19969160" />
+<S d="19969161" r="232" />
+<S d="29688662" />
+
+</SegmentTimeline>
+</SegmentTemplate><Representation id="1_audio_1" bandwidth="96000" audioSamplingRate="44100"/>
+
+</AdaptationSet><AdaptationSet id="2" group="2" profiles="ccff" bitstreamSwitching="false" segmentAlignment="true" contentType="video" mimeType="video/mp4"  codecs="avc1.64001F" maxWidth="1280" maxHeight="720" startWithSAP="1" >
+<SegmentTemplate timescale="10000000" media="video_$Bandwidth$_$Time$.m4v" initialization="video_$Bandwidth$_i.m4v" >
+<SegmentTimeline>
+<S d="20000000" t="800000" />
+<S d="20000000" r="315" />
+<S d="5600000" />
+
+</SegmentTimeline>
+</SegmentTemplate><Representation id="2_video_2" bandwidth="120000" width="256" height="144"/><Representation id="2_video_3" bandwidth="320000" width="512" height="288"/><Representation id="2_video_4" bandwidth="750000" width="1024" height="576"/><Representation id="2_video_5" bandwidth="1200000" width="1280" height="720"/><Representation id="2_video_6" bandwidth="2000000" width="1280" height="720"/><Representation id="2_video_7" bandwidth="3500000" width="1280" height="720"/>
+</AdaptationSet></Period></MPD>
